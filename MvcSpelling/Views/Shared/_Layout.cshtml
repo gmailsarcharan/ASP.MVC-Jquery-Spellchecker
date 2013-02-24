@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/jquery.spellchecker.css" rel="stylesheet" />
+    <script>
+        //please note modifications needed to be made to the Jquery Spelling Tiny MCE pluin
+        //to support the code bellow.
+        
+        var spellcheckconfig = {
+            language: "en",
+            parser: "html",
+            //using hunspell by default
+            driver: "hunspell",
+            //driver: "google",
+            handler: "@Url.Content("~/SpellCheckerHandler.ashx")"
+        };
+        //set up the variables or the jquert tiny mce implementation
+        var tinyMCELocation = "@Url.Content("~/Content/tiny_mce/tiny_mce.js")";
+        var spellCheckCss = "@Url.Content("~/Content/jquery.spellchecker.css")";
+    </script>
+    
+</head>
+<body>
+    @RenderBody()
+
+
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryspell")
+    @Scripts.Render("~/bundles/tinymce")
+    @Scripts.Render("~/bundles/appscripts")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

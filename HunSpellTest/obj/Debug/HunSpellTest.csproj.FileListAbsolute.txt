@@ -1,0 +1,11 @@
+c:\users\mp072252\documents\visual studio 11\Projects\HunSpellTest\HunSpellTest\bin\Debug\HunSpellTest.exe.config
+c:\users\mp072252\documents\visual studio 11\Projects\HunSpellTest\HunSpellTest\bin\Debug\HunSpellTest.exe
+c:\users\mp072252\documents\visual studio 11\Projects\HunSpellTest\HunSpellTest\bin\Debug\HunSpellTest.pdb
+c:\users\mp072252\documents\visual studio 11\Projects\HunSpellTest\HunSpellTest\bin\Debug\NHunspell.dll
+c:\users\mp072252\documents\visual studio 11\Projects\HunSpellTest\HunSpellTest\obj\Debug\HunSpellTest.exe
+c:\users\mp072252\documents\visual studio 11\Projects\HunSpellTest\HunSpellTest\obj\Debug\HunSpellTest.pdb
+c:\users\mp072252\documents\visual studio 11\Projects\HunSpellTest\HunSpellTest\obj\Debug\HunSpellTest.csprojResolveAssemblyReference.cache
+c:\users\mp072252\documents\visual studio 11\Projects\HunSpellTest\HunSpellTest\bin\Debug\Hunspellx64.dll
+c:\users\mp072252\documents\visual studio 11\Projects\HunSpellTest\HunSpellTest\bin\Debug\Hunspellx86.dll
+c:\users\mp072252\documents\visual studio 11\Projects\HunSpellTest\HunSpellTest\bin\Debug\Common.Spelling.dll
+c:\users\mp072252\documents\visual studio 11\Projects\HunSpellTest\HunSpellTest\bin\Debug\Common.Spelling.pdb

@@ -1,0 +1,4 @@
+﻿@model string
+@Html.TextAreaFor(m => m, new { @class="checkspelling", rows = "10", cols = "100" })
+<div id="incorrectwords"></div>
+<button type="button" class="spellcheck">Check Spelling</button>
