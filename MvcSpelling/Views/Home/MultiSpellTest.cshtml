@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "MultiSpellTest";
+}
+
+<h2>MultiSpellTest</h2>
+<p>This example demonstrates how the <em>text parser</em> can be used to check the spelling of text of multiple form fields</p>
+    <fieldset>
+      <legend>A form:</legend>
+      <div>
+        <input type="text" value="Helllo there, her is some text" />
+      </div>
+      <div>
+        <textarea id="text-content" rows="5" cols="25">Add your own text and check the spellling</textarea>
+      </div>
+      <div>
+        <textarea id="more-text-content" rows="5" cols="25">There are mispelled wurds here too.</textarea>
+      </div>
+      <div>
+        <input type="text" value="More badd txt." />
+      </div>
+      <div>
+        <button id="check-textarea">
+          Check Spelling
+        </button>&nbsp;
+      </div>
+    </fieldset>
+@section Scripts{
+    <script type="text/javascript">
+
+        (function () {
+
+            var fields = $('input:text,textarea');
+
+            // Init the text spellchecker
+            var spellchecker = new $.SpellChecker(fields, {
+                lang: 'en',
+                parser: 'text',
+                webservice: {
+                    //change to make configurable
+                    path: spellcheckconfig.handler,
+                    driver: spellcheckconfig.driver
+                },
+                suggestBox: {
+                    position: 'above'
+                },
+                incorrectWords: {
+                    position: function (container) {
+                        this.after(container);
+                    }
+                }
+            });
+
+            // Bind spellchecker handler functions
+            spellchecker.on('check.success', function () {
+                alert('There are no incorrectly spelt words.');
+            });
+
+            // Check the spelling
+            $("#check-textarea").click(function (e) {
+                spellchecker.check();
+            });
+        })();
+  </script>
+
+}

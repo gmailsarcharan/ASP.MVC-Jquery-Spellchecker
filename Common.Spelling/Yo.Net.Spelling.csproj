@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConstEnum.cs" />
+    <Compile Include="Drivers\DriverFactory.cs" />
+    <Compile Include="Drivers\Google.cs" />
+    <Compile Include="Drivers\HunSpell.cs" />
+    <Compile Include="Drivers\ISpellingDriver.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>

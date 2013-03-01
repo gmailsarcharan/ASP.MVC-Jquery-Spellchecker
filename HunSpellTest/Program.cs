@@ -15,7 +15,7 @@ namespace HunSpellTest
             Console.WriteLine("Write a sentence to be checked.");
 
             string sentence = Console.ReadLine();
-            List<string> misspelledWords = proxy.GetMisspelledWords(sentence, SupportedLanguages.EnglishUs);
+            List<string> misspelledWords = proxy.GetMisspelledWords(sentence, SupportedLanguages.en);
 
             if (misspelledWords.Count > 0)
             {
@@ -23,7 +23,7 @@ namespace HunSpellTest
                 
                 foreach (string word in misspelledWords)
                 {
-                    List<string> suggestionList = proxy.GetSuggestion(word, SupportedLanguages.EnglishUs);
+                    List<string> suggestionList = proxy.GetSuggestion(word, SupportedLanguages.en);
                     string suggestions = String.Join(",", suggestionList);
                     Console.WriteLine(word + " suggestions: " + suggestions);
                 }

@@ -124,7 +124,7 @@ namespace Yo.Net.Spelling
             {
                 switch (Language)
                 {
-                    case SupportedLanguages.EnglishUs:
+                    case SupportedLanguages.en:
                         return _englishDictionary.Value;
                     default:
                         throw new NotSupportedException("This Language is not supported.");
@@ -135,18 +135,5 @@ namespace Yo.Net.Spelling
 
     }
     
-    /// <summary>
-    /// Langauges that are currently part of the factory
-    /// </summary>
-    /// <remarks>
-    /// This could be further expanded to allow for multiple languages, or custom
-    /// dictionaries (scientific, chemical, legal, etc...)
-    /// </remarks>
-    public enum SupportedLanguages
-    {
-        /// <summary>
-        /// The Apache Open Office dictionaries
-        /// </summary>
-        EnglishUs,
-    }
+    
 }

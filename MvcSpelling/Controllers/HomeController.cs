@@ -15,6 +15,10 @@ namespace MvcSpelling.Controllers
             return View();
         }
 
+        public ActionResult MultiSpellTest()
+        {
+            return View();
+        }
         [HttpPost]
         public ActionResult Bio(BiographyViewModel model)
         {
