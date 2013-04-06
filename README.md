@@ -1,7 +1,7 @@
 ASP.MVC-Jquery-Spellchecker
 ===========================
 
-This is a implementation of a Jquery spell checker that allows for custom server side dictionary's using HunSpell
+This is a implementation of a Jquery spell checker for ASP.NET MVC that allows for custom server side dictionary's using HunSpell
 
 This is based on jQuery plugin library written by Richard Willis (willis.rh@gmail.com): https://github.com/badsyntax/jquery-spellchecker
 Along with the Original .NET port done by Jack Yang (jackmyang@gmail.com): https://github.com/jackmyang/jQuery-Spell-Checker-for-ASP.NET
